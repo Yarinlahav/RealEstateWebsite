@@ -338,6 +338,22 @@
 
 }
 
+.expertiseItem img {
+  width: 13vw;
+}
+
+.expertiseItem p {
+  font-size: 2vw;
+
+}
+
+.imageContainer {
+  position: relative;
+  width: 30%;
+  padding-bottom: 50%; /* Adjust aspect ratio as needed */
+}
+
+
 .aboutTitle{
   font-size: 10vw;
 }

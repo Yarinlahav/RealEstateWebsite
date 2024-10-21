@@ -22,7 +22,7 @@ function Contact() {
     e.preventDefault();
 
     const message = `Name: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\nMessage: ${formData.message}`;
-    const whatsappUrl = `https://wa.me/972552777169?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/972505514888?text=${encodeURIComponent(message)}`;
 
     // Open WhatsApp with the message
     window.open(whatsappUrl, '_blank');
