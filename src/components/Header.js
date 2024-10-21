@@ -6,7 +6,7 @@ function Header() {
   return (
     <header className={styles.header}>
       <div className={styles.logoContainer}>
-        <img src="https://d3csxsarc47q4y.cloudfront.net/pictures/Y.png" alt="Logo" className={styles.logo} />
+      <img src="/Logo.png" alt="Logo" className={styles.logo} />
       </div>
       <nav>
         <ul className={styles.navList}>

@@ -36,6 +36,10 @@
 
 .videoOverlay p {
   margin: 0;
+  font-size: 1vw;
+  font-family: 'Arial', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.1vw;
 }
 
 .contactButton {

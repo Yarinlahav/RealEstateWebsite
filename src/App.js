@@ -51,8 +51,10 @@ function App() {
         <div className={styles.videoOverlay}>
           <h1>Lahav Group</h1>
           <hr className={styles.heroLine} />
-          <p>Based in Tel Aviv, we are Creating Music Videos for artists and Content for Global brands.</p>
-          <p>We bring the collective years of our experience and strategies to every project.</p>
+          <p>קבוצת להב מתמחה בעסקאות נדל"ן בסקטור הפרטי והעסקי</p>
+          <p>הקבוצה מתעסקת באיגוד קבוצות רכישה באזור המרכז במסגרת זכות לדירה</p>
+          <p>קוכן גם מארגנים קבוצות רוכשים בפרויקטים נבחרים בארץ בחיסכון</p>
+          <p>של 6-9% ממחיר השיווק אצל היזמים</p>
           <Link to="/contact" className={styles.contactButton}>Contact</Link>
           <img src={ArrowIcon} alt="Arrow Down" className={styles.arrowDown} />
         </div>

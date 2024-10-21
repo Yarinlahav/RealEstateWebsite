@@ -13,7 +13,7 @@
 }
 
 .logo {
-  height: 100px; /* Adjust size as necessary */
+  height: 70px; /* Adjust size as necessary */
 }
 
 .navList {
@@ -70,7 +70,7 @@
 
 }
   .logo {
-    height: 70px; /* Adjust size as necessary */
+    height: 30px; /* Adjust size as necessary */
   }
   .logoContainer {
     position: static; /* Adjust logo position */
