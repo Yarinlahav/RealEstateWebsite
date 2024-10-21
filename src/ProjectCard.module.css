@@ -1,0 +1,36 @@
+.projectCard .imageContainer {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .projectCard .imageContainer img.projectImage {
+    width: 100%;
+    transition: transform 0.3s ease;
+  }
+  
+  .projectCard .imageContainer:hover img.projectImage {
+    transform: scale(1.1); /* Zoom effect on hover */
+  }
+  
+  .projectCard .imageContainer .address {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .ourProjects {
+    padding: 200px;
+    text-align: center;
+    margin: 20px auto; /* Centers the component and adds space around it */
+    border: 5px solid #ccc; /* Increased border thickness */
+    border-radius: 50px; /* Rounds the corners */
+    width: 90%;
+    max-width: 1200px;
+    background-color: #f1f1f1;
+
+}
