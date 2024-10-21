@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import styles from './HomePage.module.css';
 import ArrowIcon from './Content/379807.svg';
 import Israel from './Content/Israel.png';
-import HeaderVideo from './Content/Header.mp4';
 import ExpertiseIcon1 from './Content/bank-card-discount-svgrepo-com.svg';
 import plan1068 from './Content/רמת השרון מערב - מתחם צפוני.png';
 import ח2040 from './Content/ח2040.jpg';
@@ -46,7 +45,7 @@ function App() {
 
       <header className={styles.heroSection}>
         <video autoPlay loop muted playsInline className={styles.heroVideo}>
-          <source src={HeaderVideo} type="video/mp4" />
+          <source src={"https://d2h0s5tlczrtje.cloudfront.net/Header.mp4"} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <div className={styles.videoOverlay}>
