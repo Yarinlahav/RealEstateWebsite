@@ -1,0 +1,70 @@
+body {
+    background: #f0f0f0; /* Optional: sets a background color */
+  }
+
+.ourProjects {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .projectGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates a grid of 3 columns */
+    gap: 100px;
+  }
+  
+  /* Media query for phones */
+  @media (max-width: 768px) {
+    .projectGrid {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets and smaller screens */
+      gap: 40px; /* Reduce the gap between the cards */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .projectGrid {
+      grid-template-columns: 1fr; /* 1 column on small phones */
+      gap: 20px; /* Further reduce the gap */
+    }
+  
+    .projectCard {
+      max-width: 90%; /* Make the cards full width with some padding */
+      margin: 0 auto; /* Center the card in the grid cell */
+    }
+  
+    .h1 {
+      font-size: 1.5em; /* Reduce font size for smaller screens */
+    }
+  
+    .h2 {
+      font-size: 2em; /* Reduce font size for smaller screens */
+    }
+  }
+  
+  .projectCard {
+    max-width: 250px; /* More reasonable max-width */
+    margin: 0 auto; /* Center the card in the grid cell */
+  }
+  
+  .h1 {
+    margin-bottom: 5px; /* Reduce the bottom margin */
+    color: #BFA77E; /* Set the color */
+    font-family: 'Arial', sans-serif; /* Set the font family */
+  }
+  
+  .h2 {
+    margin-top: 2px; /* Reduce the top margin */
+    margin-bottom: 40px; /* Add bottom margin for spacing */
+    font-size: 3em; /* Increase the font size */
+    font-weight: bold; /* Make the text bold */
+    color: #333; /* Set the color */
+    font-family: 'Arial', sans-serif; /* Set the font family */
+    text-transform: uppercase; /* Transform text to uppercase */
+    letter-spacing: 1px; /* Add some letter spacing */
+  }
+  

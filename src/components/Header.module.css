@@ -1,0 +1,92 @@
+.header {
+  background-color: #f1f1f1;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center content horizontally */
+  position: relative;
+}
+
+.logoContainer {
+  position: absolute;
+  left: 20px;
+}
+
+.logo {
+  height: 70px; /* Adjust size as necessary */
+}
+
+.navList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; /* Ensure no margin */
+  display: flex;
+  justify-content: center; /* Center the nav items */
+}
+
+.navItem {
+  margin: 0 10px;
+}
+
+.navLink {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1em;
+  font-family: 'Arial', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block; /* Necessary for layout of the underline */
+  position: relative; /* Anchor for the absolute positioning of the underline */
+  overflow: hidden; /* Hide the part of underline that animates */
+}
+
+.navLink:hover .navUnderline,
+.activeNavLink .navUnderline {
+  width: 100%; /* Underline the full width when active or hovered */
+
+}
+
+.navUnderline {
+  display: block;
+  height: 2px;
+  background-color: #BFA77E;
+  width: 0; /* Start with no underline visible */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: width 0.5s ease; /* Smooth transition for the underline */
+}
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column; /* Stack elements vertically */
+    padding: 10px; /* Reduce padding */
+  }
+
+  .navLink:hover .navUnderline,
+.activeNavLink .navUnderline {
+  width: 60%; /* Underline the full width when active or hovered */
+
+}
+  .logo {
+    height: 30px; /* Adjust size as necessary */
+  }
+  .logoContainer {
+    position: static; /* Adjust logo position */
+    margin-bottom: 10px; /* Space between logo and nav */
+  }
+
+  .navList {
+    flex-direction: row; /* Optional: change to row for horizontal nav on small screens */
+    justify-content: space-around; /* Distribute space around nav items */
+  }
+
+  .navItem {
+    margin: 0 5px; /* Adjust margins for compact display */
+  }
+
+  .navLink {
+    font-size: 0.9em; /* Slightly larger font size for readability */
+  }
+}

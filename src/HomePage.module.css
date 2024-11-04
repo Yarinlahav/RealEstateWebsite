@@ -1,0 +1,380 @@
+/* General styles */
+
+.heroSection {
+  position: relative;
+  height: 90vh;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.heroVideo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.videoOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 5vw;
+  box-sizing: border-box;
+  margin-top: 10vh;
+}
+
+.videoOverlay p {
+  margin: 0;
+  font-size: 1vw;
+  font-family: 'Arial', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.1vw;
+}
+
+.contactButton {
+  padding: 0.5vw 1.5vw;
+  margin-top: 2vh;
+  background-color: #d6d5d5;
+  color: rgb(37, 35, 35);
+  text-decoration: none;
+  border-radius: 0.3vw;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-3vh);
+  }
+  60% {
+    transform: translateY(-1.5vh);
+  }
+}
+
+.arrowDown {
+  margin-top: 20vh;
+  animation: bounce 2s infinite;
+}
+
+.mainContainer {
+  height: 100%;
+  background-color: #f1f1f1;
+}
+
+/* Parent container for centering the .imageContainer */
+.about {
+  display: flex;
+  align-items: center; /* Vertical centering */
+  justify-content: center; /* Horizontal centering */
+  height: 100vh; /* Full height of the screen */
+  padding: 0;
+  box-sizing: border-box;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  text-align: center; /* Ensure text is centered */
+}
+
+.text, .image {
+  flex: 1;
+  max-width: 30%; /* Adjust to ensure both items are evenly spaced */
+  padding: 5vw;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.imageContainer {
+  position: relative;
+  width: 12%;
+  padding-bottom: 30%; /* Adjust aspect ratio as needed */
+}
+
+.mapImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Ensure the whole image is visible */
+  transform: none;
+  transform: rotate(15deg);
+}
+
+
+.location {
+  position: absolute;
+  width: 1.1vw;
+  height: 1.1vw;
+  background-color: rgba(60, 75, 101, 0.8);
+  border-radius: 50% 50% 50% 0;
+  transform: rotate(-45deg);
+  cursor: pointer;
+  left: 50%;
+  top: 50%;
+  margin: -1.5vw 0 0 -1.5vw;
+  box-shadow: 0 0 1vw rgba(0, 0, 0, 0.2);
+}
+
+.location::after {
+  content: '';
+  width: 0.8vw;
+  height: 0.8vw;
+  margin: 0.35vw 0 0 0.35vw;
+  background: white;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.tooltip {
+  visibility: hidden;
+  width: 12vw;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 0.5vw;
+  padding: 0.5vw;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -6vw;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.location:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+.expertise {
+  padding: 5vw;
+  text-align: center;
+  background-color: #f9f9f9;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.h2 {
+  margin-bottom: 0.5vh;
+  color: #BFA77E;
+  font-family: 'Arial', sans-serif;
+}
+
+.h3 {
+  margin-top: 0.5vh;
+  margin-bottom: 4vh;
+  font-size: 3vw;
+  font-weight: bold;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.1vw;
+}
+
+.aboutTitle {
+  margin-top: 0.5vh;
+  margin-bottom: 0;
+  font-size: 3vw;
+  font-weight: bold;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.1vw;
+}
+
+.hr {
+  border: none;
+  height: 0.3vw;
+  background-color: #BFA77E;
+  max-width: 10vw;
+}
+
+.expertiseGrid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5vw;
+  padding: 0;
+}
+
+.expertiseItem {
+  margin: 0;
+  text-align: center;
+  padding: 0;
+}
+
+.expertiseItem img {
+  width: 3vw;
+  height: auto;
+  margin: 0;
+}
+
+.expertiseItem p {
+  font-size: 0.7vw;
+  font-weight: bold;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+  letter-spacing: 0.1vw;
+}
+
+.servicesSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 2vh;
+  height: 80%;
+}
+
+.titleContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 7vh;
+}
+
+.imageWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  position: relative;
+}
+
+.imageWrapper div {
+  margin: 0 2vw;
+}
+
+.imageWrapper img {
+  border-width: 7vh 1vw;
+  border-style: solid;
+  border-color: rgb(255, 252, 252);
+  transition: transform 0.2s, filter 0.2s, border-color 0.2s;
+  max-width: 20vw;
+}
+
+.centerImage {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.centerImage img {
+  border-color: rgba(191, 167, 126, 1);
+  transform: scale(1.2);
+  filter: none;
+}
+
+.sideImage img {
+  transform: scale(0.8);
+  filter: blur(2px);
+}
+
+.arrowButton {
+  background-color: rgba(255, 255, 255, 1);
+  border: none;
+  font-size: 2vw;
+  cursor: pointer;
+  z-index: 1;
+  width: 3vw;
+  height: 3vw;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.arrowButton.prev {
+  left: -4vw;
+}
+
+.arrowButton.next {
+  right: -4vw;
+}
+
+.arrowButton:hover {
+  transform: scale(1.2) translateY(-50%);
+}
+
+.imageDescription {
+  padding: 0.2vw;
+  border: 0.2vw solid white;
+  font-size: 1.2vw;
+  color: #333;
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  border-radius: 0.5vw;
+  z-index: 100;
+}
+/* Media Queries for smaller screens */
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 768px) {
+.about{
+  height: 100%;
+}
+.text, .image {
+  max-width: 50%;
+
+}
+
+.expertiseItem img {
+  width: 13vw;
+}
+
+.expertiseItem p {
+  font-size: 2vw;
+
+}
+
+.imageContainer {
+  position: relative;
+  width: 30%;
+  padding-bottom: 50%; /* Adjust aspect ratio as needed */
+}
+
+
+.aboutTitle{
+  font-size: 10vw;
+}
+
+.expertiseItem img {
+  max-width: 20vw;
+}
+
+.imageWrapper img {
+  max-width: 20vw;
+}
+
+.servicesSection{
+  height: 50vh;
+}
+}
+
+@media (max-width: 480px) {
+
+}

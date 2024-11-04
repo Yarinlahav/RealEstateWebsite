@@ -1,0 +1,120 @@
+.pageContainer {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+  }
+  
+  .projectDetails {
+    display: flex;
+    align-items: center; /* Ensures vertical centering of content */
+    margin: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Adds subtle shadow for depth */
+    border-radius: 8px; /* Softens edges */
+    overflow: hidden; /* Ensures nothing spills outside the border */
+    width: 70%; /* Width relative to its container */
+    min-height: 90vh; /* Minimum height */
+  }
+  
+  .imageContainer {
+    padding: 20px;
+    flex: 1;
+    padding-right: 20px; /* Provides spacing between image and details */
+  }
+  
+  .projectImage {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensures image covers the area nicely */
+  }
+  
+  .details {
+    flex: 2;
+    text-align: center; /* Centers the text */
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background for the text area */
+  }
+  
+  .projectTitle {
+    color: #333; /* Darker font for better readability */
+    margin-bottom: 10px;
+  }
+  
+  .loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 1.5rem;
+    color: #666;
+  }
+  
+  .imagesContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .detailImage {
+    width: 100%;
+    max-width: 200px; /* Normal size */
+    height: auto;
+    margin: 40px;
+    border-radius: 5px;
+    cursor: pointer; /* Indicates that the item is interactive */
+  }
+  
+  .detailImage:hover {
+    position: fixed; /* Positions the image fixed relative to the viewport */
+    top: 50%; /* Centers vertically */
+    left: 50%; /* Centers horizontally */
+    transform: translate(-50%, -50%) scale(2); /* Centers exactly and scales the image */
+    z-index: 1000; /* Ensures the image is above all other elements */
+    max-width: 600px; /* Removes the max-width restriction */
+    width: auto; /* Adjust width to natural image width */
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5); /* Optional: darkens the background */
+  }
+  
+    /* Media query for phones */
+    @media (max-width: 768px) {
+
+        .projectDetails {
+            display: flex;
+            flex-direction: column; /* Stack items vertically on small screens */
+            margin: 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+            overflow: hidden;
+            width: 100%; /* Take full width on small screens */
+            min-height: auto; /* Allow height to adjust based on content */
+          }
+          
+        .projectDetails {
+          width: 90%; /* Reduce width on medium screens */
+        }
+      
+        .detailImage:hover {
+          max-width: 50%; /* Adjust max-width for medium screens */
+        }
+      }
+      
+      @media (max-width: 480px) {
+        .pageContainer {
+          padding: 10px; /* Further reduce padding on small screens */
+        }
+      
+        .details {
+          padding: 10px; /* Further adjust padding */
+        }
+      
+        .projectTitle {
+          font-size: 1.2em; /* Further reduce font size */
+        }
+      
+        .detailImage {
+          max-width: 100px; /* Further reduce image size */
+          margin: 5px; /* Further reduce margin */
+        }
+      }
+      
