@@ -125,15 +125,6 @@
   box-shadow: 0 0 1vw rgba(0, 0, 0, 0.2);
 }
 
-.location::after {
-  content: '';
-  width: 0.8vw;
-  height: 0.8vw;
-  margin: 0.35vw 0 0 0.35vw;
-  background: white;
-  position: absolute;
-  border-radius: 50%;
-}
 
 .tooltip {
   visibility: hidden;

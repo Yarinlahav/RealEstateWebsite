@@ -12,18 +12,11 @@ function Footer() {
       <div className={styles.divider}></div>
       <div className={styles.contactInfo}>
         <p><FontAwesomeIcon icon={faPhone} /> +972-505514888</p>
-        <p><FontAwesomeIcon icon={faEnvelope} /> yarinl@ls-lawfirm.co.il</p>
         <p><FontAwesomeIcon icon={faMapMarkerAlt} /> Tel Aviv, Israel</p>
       </div>
       <div className={styles.socialIcons}>
         <a href="https://wa.me/972505514888" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faWhatsapp} />
-        </a>
-        <a href="https://www.facebook.com/share/WFyzi2TgZSMwvHL6/?mibextid=LQQJ4d" target="_blank" rel="noopener noreferrer">
-          <FontAwesomeIcon icon={faFacebook} />
-        </a>
-        <a href="https://www.instagram.com/yanai_tts?igsh=ZWliNjB6cTViZTF2" target="_blank" rel="noopener noreferrer">
-          <FontAwesomeIcon icon={faInstagram} />
         </a>
       </div>
       <div className={styles.footerContainer}>

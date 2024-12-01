@@ -13,18 +13,17 @@ import GlilYam2 from '../Content/GlilYam2.png';
 import GlilYam from '../Content/GlilYam.png';
 import Rananan1 from '../Content/Ranan1.png'
 import Rananan from '../Content/Rananan.png'
+import NatanyaHavzeletHashron from '../Content/חבצלת השרון נתניה 1.jpeg'
+import NatanyaHavzeletHashron1 from '../Content/חבצלת השרון נתניה.jpeg'
 
 function ProjectDetails() {
   const { projectId } = useParams();
   const [project, setProject] = useState(null);
 
   const projects = [
-    { id: 1, name: 'אלופי צהל חולון', imageUrl: A, address: '1234 Main St', architect: 'גל אור פישביין', developer: 'קרדן נדל"ן', units: 120, floors: 12 },
-    { id: 2, name: 'ההסתדרות חולון', imageUrl: B, address: '1234 Main St', architect: 'גל אור פישביין', developer: 'קרדן נדל"ן', units: 150, floors: 12 },
-    { id: 3, name: 'Project C', imageUrl: C, address: '1234 Main St', architect: 'גל אור פישביין', developer: 'קרדן נדל"ן', units: 160 },
-    { id: 4, name: 'Project D', imageUrl: D, address: '1234 Main St', architect: 'גל אור פישביין', developer: 'קרדן נדל"ן', units: 160 },
-    { id: 5, name: 'גליל ים הרצליה', imageUrl: E, address: 'מגדל גליל ים', architect: 'גל אור פישביין', developer: 'קרדן נדל"ן', units: 159, floors: 28, state: "קרקע זמינה לבניה היתר בניה צפוי אמצע 2026", detaildImages: [GlilYam2, GlilYam] },
-    { id: 6, name: 'מערב הפארק רעננה', imageUrl: F, address: '1234 Main St', architect: 'גל אור פישביין', developer: 'קרדן נדל"ן', units: 199, floors: 10, state: 'קרקע זמינה לבניה היתר בניה צפוי סוף 2027', detaildImages: [Rananan1, Rananan] }
+    { id: 2, name: 'חבצלת השרון נתניה', imageUrl: B, address: 'חבצלת השרון נתניה', developer: 'קו האופק', units: 132, floors: 9 , state: "קרקע זמינה לבניה היתר בניה צפוי אמצע 2026 צפי, אכלוס 2030", detaildImages: [NatanyaHavzeletHashron, NatanyaHavzeletHashron1]},
+    { id: 3, name: 'גליל ים הרצליה', imageUrl: E, address: 'מגדל גליל ים', developer: 'קו האופק', units: 159, floors: 28, state: "קרקע זמינה לבניה היתר בניה צפוי אמצע 2026 צפי, אכלוס 2029", detaildImages: [GlilYam2, GlilYam] },
+    { id: 4, name: ' COMING SOON - מערב הפארק רעננה', imageUrl: F, address: 'מערב הפארק רעננה', state: 'קרקע זמינה לבניה היתר בניה צפוי סוף 2027', detaildImages: [Rananan1, Rananan] },
   ];
 
   useEffect(() => {
@@ -52,7 +51,7 @@ function ProjectDetails() {
           {project.developer && <p><strong>שם היזם:</strong> {project.developer}</p>}
           {project.floors && <p><strong>קומות:</strong> {project.floors}</p>}
           {project.units && <p><strong>מספר יחידות דיור:</strong> {project.units}</p>}
-          {project.state && <p><strong>סטתוס:</strong> {project.state}</p>}
+          {project.state && <p><strong>סטטוס:</strong> {project.state}</p>}
           {project.detaildImages && project.detaildImages.length > 0 && (
             <div className={styles.imagesContainer}>
               {project.detaildImages.map((imgUrl, index) => (

@@ -12,12 +12,9 @@ import F from '../Content/F.png'
 function OurProjects() {
   // Example project data (you should replace this with actual data perhaps fetched from an API)
   const projects = [
-    { id: 1, name: 'Project A', imageUrl: A, address: '1234 Main St' },
-    { id: 2, name: 'Project B', imageUrl: B, address: '5678 Elm St' },
-    { id: 3, name: 'Project C', imageUrl: C, address: '91011 Maple St' },
-    { id: 4, name: 'Project D', imageUrl: D, address: '1213 Oak St' },
-    { id: 5, name: 'Project E', imageUrl: E, address: '1415 Cedar St' },
-    { id: 6, name: 'Project F', imageUrl: F, address: '1617 Pine St' }
+    { id: 2, name: 'Project B', imageUrl: B, address: 'חבצלת השרון נתניה' },
+    { id: 3, name: 'Project E', imageUrl: E, address: 'גליל-ים הרצליה' },
+    { id: 4, name: 'Project F', imageUrl: F, address: 'מערב הפארק רעננה' },
   ];
 
   return (

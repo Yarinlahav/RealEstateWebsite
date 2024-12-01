@@ -12,21 +12,6 @@ function Header() {
         <ul className={styles.navList}>
           <li className={styles.navItem}>
             <NavLink
-              exact
-              className={styles.navLink}
-              activeClassName={styles.activeNavLink}
-              to="/"
-              isActive={(match, location) => {
-                console.log("Home Active?", match); // Debugging: Check if the match occurs
-                return !!match;
-              }}
-            >
-              עמוד הבית
-              <span className={styles.navUnderline}></span>
-            </NavLink>
-          </li>
-          <li className={styles.navItem}>
-            <NavLink
               className={styles.navLink}
               activeClassName={styles.activeNavLink}
               to="/about"
@@ -62,6 +47,21 @@ function Header() {
               to="/OurExpertise"
             >
               תחומי עיסוק
+              <span className={styles.navUnderline}></span>
+            </NavLink>
+          </li>
+          <li className={styles.navItem}>
+            <NavLink
+              exact
+              className={styles.navLink}
+              activeClassName={styles.activeNavLink}
+              to="/"
+              isActive={(match, location) => {
+                console.log("Home Active?", match); // Debugging: Check if the match occurs
+                return !!match;
+              }}
+            >
+              עמוד הבית
               <span className={styles.navUnderline}></span>
             </NavLink>
           </li>
